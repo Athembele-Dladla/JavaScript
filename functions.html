@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+       <h1 id="heading" onclick ="changeText()"> Aphiwe Dladla</h1>
+       <p id="addition"></p>
+
+            <script>
+                 document.getElementById("addition").innerHTML = addNumbers(8, 10);
+                function changeText(){
+                    if(document.getElementById("heading").innerHTML == 'Aphiwe Dladla'){
+                    document.getElementById("heading").innerHTML='Athembele Dladla'
+                    } else {
+                    document.getElementById("heading").innerHTML = 'Aphiwe Dladla';
+                }
+                }
+
+                function addNumbers(num1, num2){
+                   return num1 + num2;
+                }
+            </script>
+</html>
